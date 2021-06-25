@@ -1,2 +1,22 @@
-input {
-  font-size: 10px; }
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box; }
+
+html {
+  --light-grey: #E2E0B8;
+  --grey: #E9E9E9;
+  --dark-grey: #716565;
+  --light-brown: #846219;
+  --dark-blue: #506FA9;
+  font-size: 62.5%; }
+
+body {
+  height: 100vh;
+  background: #FFFFFF; }
+
+.content {
+  width: 100%;
+  margin: 0 auto; }
