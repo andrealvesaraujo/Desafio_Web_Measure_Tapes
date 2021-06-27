@@ -48,14 +48,13 @@
     background-color: var(--dark-blue) ;
     padding: 7.6rem 1.8rem 28rem 1.4rem;   
     
-    position: relative;
+    background-image: url("/images/tape_measure_line.svg");
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 80%;
 
-}
-
-.content main .info img{
-    position: absolute;
-    right: 0;
-    bottom: 8rem;
 }
 
 .content main .info h2 {
@@ -123,5 +122,47 @@
 }
 
 @media (min-width: 767.99px) {
+
+    .content main .principal {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 235px 152px 334px 231px;
+    }
     
+    .content main .principal h2{
+        margin-right: 2.7rem;
+        font-size: 8.2rem;
+        line-height: 9.6rem;
+    }    
+ 
+    .content main .principal img{
+        width: 682px;
+        height: 335px;
+    }
+    
+ 
+    .content main .info {
+        padding: 44.9rem 79.7rem 21.6rem 15.9rem;   
+        
+        width: 100%;
+        height: auto;
+        background-position-y: 25%;
+        background-size: 70%;
+        
+    
+    
+    }
+
+    .content main .info h2 {
+        font-size: 6.9rem;
+        line-height: 8.1rem;
+        white-space: nowrap;
+    }
+    
+    .content main .info p {
+        font-size: 4.8rem;
+        line-height: 5.6rem;
+    }
+
 }
