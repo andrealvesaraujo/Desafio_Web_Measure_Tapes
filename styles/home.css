@@ -1,6 +1,10 @@
 .content {
 
+    width: 100%;
+    margin: 0 auto; 
+  
 }
+  
 
 .content header {
   width: 100%;
@@ -42,23 +46,32 @@
 
 .content main .info {
     background-color: var(--dark-blue) ;
-    padding: 76px 18px 80px 14px;
+    padding: 7.6rem 1.8rem 28rem 1.4rem;   
+    
+    position: relative;
+
+}
+
+.content main .info img{
+    position: absolute;
+    right: 0;
+    bottom: 8rem;
 }
 
 .content main .info h2 {
-    margin-bottom: 22px;
+    margin-bottom: 2.2rem;
     font-weight: bold;
-    font-size: 41.2px;
-    line-height: 48px;
+    font-size: 4.1rem;
+    line-height: 4.8rem;
     color: #FFFFFF;
 }
 
 .content main .info p {
     font-weight: 300;
-    font-size: 26.2px;
-    line-height: 31px;
+    font-size: 2.6rem;
+    line-height: 3.1rem;
     color: #FFFFFF;
-    margin-bottom: 32px;
+    margin-bottom: 3.2rem;
 }
 
 
@@ -66,19 +79,19 @@
     background-color: var(--grey) ;
     color: var(--dark-grey);
     text-align: center;
-    padding: 41px 75px 53px 75px;
+    padding: 4.1rem 7.5rem 5.3rem 7.5rem;
     
 }
 
 .content footer h3{
     font-weight: bold;
-    font-size: 27.2px;
-    line-height: 32px;
+    font-size: 2.72rem;
+    line-height: 3.2;
 }
 
 .content footer .social-medias{
-    margin-top: 21px;
-    margin-bottom: 40px;
+    margin-top: 2.1rem;
+    margin-bottom: 4.0rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,26 +100,26 @@
 
 .content footer .social-medias a{
     display: flex;
-    border: 1px solid var(--dark-grey);
+    border: .1rem solid var(--dark-grey);
     border-radius: 100%;
-    padding: 10px;
+    padding: 1rem;
 }
 
 .content footer .social-medias a:nth-child(1), 
 .content footer .social-medias a:nth-child(2){
-    margin-right: 18px;   
+    margin-right: 1.8rem;   
 }
 
 .content footer .social-medias a img{
-    width: 20px;
-    height: 20px;
+    width: 2rem;
+    height: 2rem;
 }
 
 .content footer p{
     font-weight: normal;
-    font-size: 16.2px;
-    line-height: 19px;
-    margin-top: 15px;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    margin-top: 1.5rem;
 }
 
 @media (min-width: 767.99px) {
