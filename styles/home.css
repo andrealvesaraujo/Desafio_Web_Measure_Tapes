@@ -1,27 +1,31 @@
 .content {
-
+    margin: 0 auto;  
     width: 100%;
-    margin: 0 auto; 
-  
-}
-  
+}  
 
 .content header {
-  width: 100%;
-  padding: 1rem 0rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.content header.active {
+    overflow: visible;
+    margin-bottom: 8.8rem;
 }
 
 .content header > img {
-  position: absolute;
-  left: 2.2rem;
+    position: absolute;
+    left: 2.2rem;
 }
 
 .content header > div img {
     line-height: 0;
-  }
+}
 
 .content header h3, .content header h4 {
     display: none;
@@ -31,77 +35,96 @@
     display: none;
 }
 
+.content header nav.active {
+    display: flex;
+    position: absolute;
+    left: 0px;
+    background: #FFFFFF;
+    flex-direction: column;
+    top: 62px;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.content header nav a {
+    font-size: 1.62rem;
+    font-weight: 300;
+    line-height: 1.9rem;
+    letter-spacing: .54rem;
+    color: var(--light-brown);
+    margin-bottom: 1rem;
+}    
+
 .content main .principal {
-    background-color: var(--grey) ;
-    text-align: left;
     padding: 8.4rem 1.8rem 13.5rem 1.8rem;
+    text-align: left;
+    background-color: var(--grey);
 }
 
 .content main .principal h2{
-    color: var(--dark-grey);
     font-size: 5.32rem;
     font-weight: bold;
     line-height: 6.2rem;
+    color: var(--dark-grey);
 }
 
 .content main .info {
-    background-color: var(--dark-blue) ;
     padding: 7.6rem 1.8rem 28rem 1.4rem;   
     
+    background-color: var(--dark-blue) ;
     background-image: url("/images/tape_measure_line.svg");
-    width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
     background-position-x: right;
     background-position-y: 80%;
-
+    background-repeat: no-repeat;
+    
+    width: 100%;
+    height: auto;
 }
 
 .content main .info h2 {
     margin-bottom: 2.2rem;
-    font-weight: bold;
     font-size: 4.1rem;
+    font-weight: bold;
     line-height: 4.8rem;
     color: #FFFFFF;
 }
 
 .content main .info p {
-    font-weight: 300;
+    margin-bottom: 3.2rem;
     font-size: 2.6rem;
+    font-weight: 300;
     line-height: 3.1rem;
     color: #FFFFFF;
-    margin-bottom: 3.2rem;
 }
 
 
 .content footer {
+    padding: 4.1rem 7.5rem 5.3rem 7.5rem;
+    text-align: center;
     background-color: var(--grey) ;
     color: var(--dark-grey);
-    text-align: center;
-    padding: 4.1rem 7.5rem 5.3rem 7.5rem;
     
 }
 
-.content footer h3{
-    font-weight: bold;
+.content footer h3 {
     font-size: 2.72rem;
+    font-weight: bold;
     line-height: 3.2rem;
 }
 
-.content footer .social-medias{
+.content footer .social-medias {
     margin-top: 2.1rem;
     margin-bottom: 4.0rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
-.content footer .social-medias a{
-    display: flex;
+.content footer .social-medias a {
+    padding: 1rem;
     border: .2rem solid var(--dark-grey);
     border-radius: 100%;
-    padding: 1rem;
+    display: flex;
 }
 
 .content footer .social-medias a:nth-child(1){
@@ -118,18 +141,23 @@
 }
 
 .content footer p{
-    font-weight: normal;
-    font-size: 1.6rem;
-    line-height: 1.9rem;
     margin-top: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 1.9rem;
 }
 
 @media (min-width: 767.99px) {
 
     .content header {
+        padding: 2.0rem 1.4rem 2.0rem 5.3rem;
         justify-content: space-between;
-        padding: 2.0rem 6.4rem 2.0rem 5.3rem;
+        overflow: visible;
     }  
+
+    .content header.active {
+        margin-bottom: 0;
+    }
     
     .content header > img {
         display: none;
@@ -140,9 +168,9 @@
     }
 
     .content header > div img {
+        margin-right: 2.3rem;
         width: 7.1rem;
         height: 7rem;
-        margin-right: 2.3rem;
     }   
 
     .content header > div > div {
@@ -157,41 +185,52 @@
     }
     
     .content header h3  {
-        font-weight: bold;
         font-size: 4.12rem;
+        font-weight: bold;
         line-height: 4.828rem;
     }
     
     .content header h4 {
-        font-weight: 300;
         font-size: 1.62rem;
+        font-weight: 300;
         line-height: 1.898rem;
         letter-spacing: .54rem;
     }
 
 
     .content header nav {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-grow: 0.5;
     }    
+
+    .content header nav.active {
+        position: static;
+        padding-left: 0;
+        flex-direction: row;
+        left: 0;
+        top: 0;
+        background: none;
+        width: initial;
+    }
 
     .content header nav a {
-        font-weight: 300;
-        font-size: 1.62rem;
-        line-height: 1.9rem;
-        letter-spacing: .54rem;
-        color: var(--light-brown);
+        margin-bottom: 0;
     }    
 
-    .content header nav a:nth-child(1), 
+    
+
+    /* .content header nav a:nth-child(1), 
     .content header nav a:nth-child(2){
         margin-right: 12.8rem;
-    }    
+    }     */
 
     .content main .principal {
+        padding: 23.5rem 15.2rem 33.4rem 23.1rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 23.5rem 15.2rem 33.4rem 23.1rem;
     }
     
     .content main .principal h2{
@@ -208,10 +247,8 @@
  
     .content main .info {
         padding: 44.9rem 79.7rem 21.6rem 15.9rem;          
-        width: 100%;
-        height: auto;
-        background-position-y: 25%;
         background-size: 70%;
+        background-position-y: 25%;
 
     }
 
@@ -227,9 +264,9 @@
     }
 
     .content footer {
-        display: flex;
-        text-align: left;        
         padding: 4.7rem 7.2rem 7.5rem 7.2rem;
+        text-align: left;        
+        display: flex;
     }
 
     .content footer > div:nth-child(1) {
