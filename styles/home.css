@@ -227,14 +227,15 @@
     }
     
     .content main .principal h2{
-        margin-right: 2.7rem;
         font-size: 8.2rem;
         line-height: 9.6rem;
     }    
  
     .content main .principal img{
-        width: 68.2rem;
-        height: 33.5rem;
+        width: 100%;
+        height: auto; 
+        max-width: 68.2rem;
+        max-height: 33.5rem;
     }
     
  
