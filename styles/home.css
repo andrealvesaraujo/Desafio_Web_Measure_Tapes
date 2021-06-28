@@ -21,6 +21,7 @@
 .content header > img {
     position: absolute;
     left: 2.2rem;
+    cursor: pointer;
 }
 
 .content header > div img {
